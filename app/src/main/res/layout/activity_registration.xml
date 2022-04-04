@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryLightColor"
+    tools:context=".RegistrationActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_reg_first_name_entry_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/first_name_label"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_welcome_text"
+        app:layout_constraintStart_toStartOf="@+id/lbl_welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_welcome_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_reg_first_name_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_reg_last_name_entry_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/last_name_label"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="@+id/txt_reg_first_name_entry_field"
+        app:layout_constraintStart_toStartOf="@+id/txt_reg_first_name_entry_field"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reg_first_name_entry_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_reg_last_name_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_reg_email_entry_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/email_label"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="@+id/txt_reg_last_name_entry_field"
+        app:layout_constraintStart_toStartOf="@+id/txt_reg_last_name_entry_field"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reg_last_name_entry_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_reg_email_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_reg_original_password_entry_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/enter_password_label"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="@+id/txt_reg_email_entry_field"
+        app:layout_constraintStart_toStartOf="@+id/txt_reg_email_entry_field"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reg_email_entry_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_reg_original_password_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_reg_password_confirm_entry_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/confirm_password_label"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="@+id/txt_reg_original_password_entry_field"
+        app:layout_constraintStart_toStartOf="@+id/txt_reg_original_password_entry_field"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reg_original_password_entry_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_reg_password_confirm_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_reg_phone_number_entry_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/phone_number_label"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="@+id/txt_reg_password_confirm_entry_field"
+        app:layout_constraintStart_toStartOf="@+id/txt_reg_password_confirm_entry_field"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reg_password_confirm_entry_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_reg_phone_number_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/primaryColor"
+        android:onClick="registerUser"
+        android:text="@string/prompt_sign_up"
+        android:textColor="@color/primaryTextColor"
+        app:backgroundTint="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="@+id/txt_reg_phone_number_entry_field"
+        app:layout_constraintStart_toStartOf="@+id/txt_reg_phone_number_entry_field"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reg_phone_number_entry_field" />
+
+    <ImageView
+        android:id="@+id/img_kuku_app_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_kukuapplogo" />
+
+    <TextView
+        android:id="@+id/lbl_welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/registration_welcome_text"
+        android:textColor="@color/primaryColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_kuku_app_logo"
+        app:layout_constraintStart_toStartOf="@+id/img_kuku_app_logo"
+        app:layout_constraintTop_toBottomOf="@+id/img_kuku_app_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">kukuapp</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">John Wambua</string>
+    <string name="nav_header_subtitle">john.wambua@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_orders">Orders</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="splash_slogan">Your number 1 trusted poultry order and delivery platform.</string>
+    <string name="kuku_logo_text">KUKU APP</string>
+    <string name="prompt_enter_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_login">Login</string>
+    <string name="lbl_registration_button">Sign Up</string>
+    <string name="prompt_sign_up">Sign Up</string>
+    <string name="first_name_label">First Name</string>
+    <string name="last_name_label">Last Name</string>
+    <string name="email_label">Email</string>
+    <string name="enter_password_label">Enter Password</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="registration_welcome_text">Welcome to Kuku App</string>
+    <string name="contact_information">Incase of any inquiries reach us on</string>
+    <string name="order_number_text">Order Number #</string>
+    <string name="contact_number">0700000000</string>
+    <string name="payments_title">Payments</string>
+    <string name="content_desc_payment_success">payment_success</string>
+    <string name="order_receipts_app_bar_title">Order Receipts</string>
+    <string name="label_select_payment_method">Select payment method</string>
+    <string name="txt_num_of_trays_label">Number of trays</string>
+    <string name="label_tray_quantity">Tray Quantity</string>
+    <string name="label_product_name">Product:</string>
+    <string name="text_total_amount">Total</string>
+    <string name="sign_up_link">Sign Up</string>
+    <string name="home_page_slogan">supplying the demand</string>
+    <string name="label_btn_proceed">Proceed</string>
+</resources>

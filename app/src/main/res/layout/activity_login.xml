@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/txt_kuku_app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@color/primaryTextColor"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/kuku_logo_text"
+        android:textColor="@color/primaryColor"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/prompt_enter_email"
+        android:textColor="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_kuku_app_logo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/prompt_password"
+        android:textColor="@color/primaryDarkColor"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/email_field"
+        app:layout_constraintStart_toStartOf="@+id/email_field"
+        app:layout_constraintTop_toBottomOf="@+id/email_field">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="179dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/primaryColor"
+        android:onClick="signInUser"
+        android:text="@string/prompt_login"
+        android:textColor="@color/primaryTextColor"
+        app:backgroundTint="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="@+id/password_field"
+        app:layout_constraintStart_toStartOf="@+id/password_field"
+        app:layout_constraintTop_toBottomOf="@+id/password_field" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/txt_login_email_entry"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_marginTop="52dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:gravity="center"-->
+    <!--        android:hint="@string/prompt_enter_email"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:shadowColor="#DF9595"-->
+    <!--        android:textColorHint="#000000"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/txt_login_password_entry"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txt_kuku_app_logo"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+
+    <TextView
+        android:id="@+id/txt_signup_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:onClick="sendToRegistrationActivity"
+        android:text="@string/sign_up_link"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toEndOf="@+id/txt_signup_message"
+        app:layout_constraintTop_toTopOf="@+id/txt_signup_message" />
+
+    <TextView
+        android:id="@+id/txt_signup_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Dont have an account? "
+        android:textColor="#494848"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

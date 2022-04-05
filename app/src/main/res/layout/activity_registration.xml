@@ -142,7 +142,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@color/primaryColor"
-        android:onClick="registerUser"
         android:text="@string/prompt_sign_up"
         android:textColor="@color/primaryTextColor"
         app:backgroundTint="@color/primaryColor"

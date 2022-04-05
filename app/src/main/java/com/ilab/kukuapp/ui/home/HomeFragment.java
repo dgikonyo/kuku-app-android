@@ -24,6 +24,15 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        binding.imgBroilerChick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //invoke action in mobile navigation to change between fragments
+                HomeFragmentDirections.actionNavHomeToNavMap();
+            }
+        });
+
+
 //        final TextView textView = binding.textHome;
 //        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
@@ -34,4 +43,5 @@ public class HomeFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }

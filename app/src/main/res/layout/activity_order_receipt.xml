@@ -54,9 +54,8 @@
         android:text="Replace with customer info"
         android:textColor="@color/secondaryTextColor"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_order_number"
+        app:layout_constraintStart_toStartOf="@+id/txt_order_number"
         app:layout_constraintTop_toBottomOf="@+id/txt_order_number" />
 
     <TextView
@@ -68,9 +67,8 @@
         android:text="Grand Total:  Ksh."
         android:textColor="@color/secondaryTextColor"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_customer_order_details"
+        app:layout_constraintStart_toStartOf="@+id/txt_customer_order_details"
         app:layout_constraintTop_toBottomOf="@+id/txt_customer_order_details" />
 
     <TextView
@@ -81,8 +79,8 @@
         android:fontFamily="@font/roboto_medium"
         android:text="@string/label_select_payment_method"
         android:textColor="@color/secondaryTextColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_grand_total"
+        app:layout_constraintStart_toStartOf="@+id/txt_grand_total"
         app:layout_constraintTop_toBottomOf="@+id/txt_grand_total" />
 
     <LinearLayout

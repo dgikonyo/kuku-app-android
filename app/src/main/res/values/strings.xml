@@ -39,4 +39,8 @@
     <string name="sign_up_link">Sign Up</string>
     <string name="home_page_slogan">supplying the demand</string>
     <string name="label_btn_proceed">Proceed</string>
+    <string name="contact_person_name">Name</string>
+    <string name="contact_person_phone_number">Phone Number</string>
+    <string name="contact_person_label">Contact Person</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
 </resources>
